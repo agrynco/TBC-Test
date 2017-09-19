@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="2" result="Failed" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.0.5813.39036" clr-version="4.0.30319.42000" start-time="2017-03-11 13:51:44Z" end-time="2017-03-11 13:52:18Z" duration="33.728501">
+  <command-line><![CDATA["C:\Projects\neosweat\neosweat-web-api\Tools\NUnit\nunit-console\nunit3-console.exe" C:\Projects\neosweat\neosweat-web-api\Sources\Neosweat.Business.Logic.IntegrationTests\bin\Debug\Neosweat.Business.Logic.IntegrationTests.dll ]]></command-line>
+  <test-suite type="Assembly" id="0-1003" name="Neosweat.Business.Logic.IntegrationTests.dll" fullname="C:\Projects\neosweat\neosweat-web-api\Sources\Neosweat.Business.Logic.IntegrationTests\bin\Debug\Neosweat.Business.Logic.IntegrationTests.dll" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2017-03-11 13:51:44Z" end-time="2017-03-11 13:52:18Z" duration="33.680707" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.6.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.10240.0" platform="Win32NT" cwd="C:\Projects\neosweat\neosweat-web-api\Tools\NUnit\nunit-console" machine-name="DESKTOP-J6KIKCF" user="AGrynCo" user-domain="DESKTOP-J6KIKCF" culture="uk-UA" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Projects\neosweat\neosweat-web-api\Tools\NUnit\nunit-console" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="7504" />
+      <property name="_APPDOMAIN" value="test-domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1004" name="Neosweat" fullname="Neosweat" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2017-03-11 13:51:44Z" end-time="2017-03-11 13:52:18Z" duration="33.658208" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1005" name="Business" fullname="Neosweat.Business" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2017-03-11 13:51:44Z" end-time="2017-03-11 13:52:18Z" duration="33.654242" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="0-1006" name="Logic" fullname="Neosweat.Business.Logic" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2017-03-11 13:51:44Z" end-time="2017-03-11 13:52:18Z" duration="33.650215" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="0-1007" name="IntegrationTests" fullname="Neosweat.Business.Logic.IntegrationTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2017-03-11 13:51:44Z" end-time="2017-03-11 13:52:18Z" duration="33.646496" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="0-1000" name="BattlesBLTests" fullname="Neosweat.Business.Logic.IntegrationTests.BattlesBLTests" classname="Neosweat.Business.Logic.IntegrationTests.BattlesBLTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2017-03-11 13:51:44Z" end-time="2017-03-11 13:52:18Z" duration="33.639955" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="0-1001" name="StartBattles_ShouldCreateBattles" fullname="Neosweat.Business.Logic.IntegrationTests.BattlesBLTests.StartBattles_ShouldCreateBattles" methodname="StartBattles_ShouldCreateBattles" classname="Neosweat.Business.Logic.IntegrationTests.BattlesBLTests" runstate="Runnable" seed="1036923287" result="Failed" label="Error" start-time="2017-03-11 13:51:59Z" end-time="2017-03-11 13:52:00Z" duration="1.634683" asserts="0">
+                <properties>
+                  <property name="Category" value="ReadWrite" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : No Entity Framework provider found for the ADO.NET provider with invariant name 'System.Data.SqlClient'. Make sure the provider is registered in the 'entityFramework' section of the application config file. See http://go.microsoft.com/fwlink/?LinkId=260882 for more information.]]></message>
+                  <stack-trace><![CDATA[   at System.Data.Entity.Infrastructure.DependencyResolution.DefaultProviderServicesResolver.GetService(Type type, Object key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at System.Data.Entity.Infrastructure.DependencyResolution.RootDependencyResolver.GetService(Type type, Object key)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at System.Data.Entity.Infrastructure.DependencyResolution.CompositeResolver`2.GetService(Type type, Object key)
+   at System.Data.Entity.Infrastructure.DependencyResolution.DbDependencyResolverExtensions.GetService[T](IDbDependencyResolver resolver, Object key)
+   at System.Data.Entity.Infrastructure.DefaultManifestTokenResolver.<>c__DisplayClass1.<ResolveManifestToken>b__0(Tuple`3 k)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at System.Data.Entity.Utilities.DbConnectionExtensions.GetProviderInfo(DbConnection connection, DbProviderManifest& providerManifest)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Neosweat.DAL.EF.Users.UsersRepository.GetUsersFreeForBattleButNotInBattle() in C:\Projects\neosweat\neosweat-web-api\Sources\Neosweat.DAL.EF\Users\UsersRepository.cs:line 107
+   at Neosweat.Business.Logic.UsersBL.GetFreeForBattleButNotInBattle() in C:\Projects\neosweat\neosweat-web-api\Sources\Neosweat.Business.Logic\UsersBL.cs:line 138
+   at Neosweat.Business.Logic.BattlesBL.StartBattles(DateTime battleStartDateTime, Int32 battleDurationInMinutes) in C:\Projects\neosweat\neosweat-web-api\Sources\Neosweat.Business.Logic\BattlesBL.cs:line 47
+   at Neosweat.Business.Logic.IntegrationTests.BattlesBLTests.StartBattles_ShouldCreateBattles() in C:\Projects\neosweat\neosweat-web-api\Sources\Neosweat.Business.Logic.IntegrationTests\BattlesBLTests.cs:line 29]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="0-1002" name="StartBattles_ShouldNotCreateAnyBattles" fullname="Neosweat.Business.Logic.IntegrationTests.BattlesBLTests.StartBattles_ShouldNotCreateAnyBattles" methodname="StartBattles_ShouldNotCreateAnyBattles" classname="Neosweat.Business.Logic.IntegrationTests.BattlesBLTests" runstate="Runnable" seed="473148700" result="Passed" start-time="2017-03-11 13:52:00Z" end-time="2017-03-11 13:52:18Z" duration="17.700594" asserts="0">
+                <properties>
+                  <property name="Category" value="Integration" />
+                  <property name="Category" value="ReadWrite" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
