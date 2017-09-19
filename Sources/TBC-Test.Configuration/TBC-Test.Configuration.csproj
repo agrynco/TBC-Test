@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3735C292-85DA-420F-A284-56D9CA5AA044}</ProjectGuid>
+    <ProjectGuid>{0CA9F5FA-15FE-498F-8BDD-A4DEB7D99F32}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TBC_Test.Business.Domain</RootNamespace>
-    <AssemblyName>TBC-Test.Business.Domain</AssemblyName>
+    <RootNamespace>TBC_Test.Configuration</RootNamespace>
+    <AssemblyName>TBC-Test.Configuration</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gender.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="AppEnvironment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
