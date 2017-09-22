@@ -1,0 +1,16 @@
+﻿<div ng-controller="profileController as vm">
+    <h1>Human API</h1>
+    <div>
+        <img id="connect-health-data-btn" ng-click="vm.openHumanApi()" src="https://connect.humanapi.co/assets/button/blue.png"/>
+    </div>
+    <h1>Fitbit API</h1>
+    <div>
+        <img id="connect-fitbit-api-btn" ng-click="vm.openFitbitApi()" src="https://connect.humanapi.co/assets/button/blue.png"/>
+    </div>
+    <div>
+        <form method="post" enctype="multipart/form-data" id="uploadProfilePhotoForm" action="">
+            <input type="file" name="file" id="file" multiple/>
+            <input type="button" value="Upload Photo" ng-click="vm.uploadProfilePhoto()"/>
+        </form>
+    </div>
+</div>
