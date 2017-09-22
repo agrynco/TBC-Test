@@ -93,7 +93,7 @@
     <Content Include="app\controllers\indexController.js" />
     <Content Include="app\controllers\personsController.js" />
     <Content Include="app\services\personsService.js" />
-    <Content Include="app\views\home.html" />
+    <Content Include="app\views\persons-edit.html" />
     <Content Include="app\views\persons.html" />
     <Content Include="content\bootstrap-theme.css" />
     <Content Include="content\bootstrap-theme.min.css" />
