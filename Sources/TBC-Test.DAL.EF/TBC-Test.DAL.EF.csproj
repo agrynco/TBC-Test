@@ -53,6 +53,7 @@
     <Compile Include="Core\BaseCRUDRepository.cs" />
     <Compile Include="Core\BaseReadOnlyRepository.cs" />
     <Compile Include="Core\BaseRepository.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PersonsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TbcCrudRepository.cs" />
@@ -71,6 +72,11 @@
       <Project>{9349D20E-4BA2-4E01-81FF-3EBE794BA792}</Project>
       <Name>TBC-Test.DAL.Abstract</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Migrations\0-0.sql" />
+    <Content Include="Migrations\0-2.sql" />
+    <Content Include="Migrations\0-1.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

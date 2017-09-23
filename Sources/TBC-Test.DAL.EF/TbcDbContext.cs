@@ -6,13 +6,13 @@ namespace TBC_Test.DAL.EF
 {
     public class TbcDbContext : DbContext
     {
-        protected TbcDbContext() : this("tbc-test")
+        public TbcDbContext() : this("tbc-test")
         {
         }
 
         public TbcDbContext(string nameOrConnectionString) : base(nameOrConnectionString)
         {
-            Debug.WriteLine("Create NeosweatDbContext");
+            Debug.WriteLine($"Create {nameof(TbcDbContext)}");
             Database.Log = message => Debug.WriteLine(message);
         }
 
