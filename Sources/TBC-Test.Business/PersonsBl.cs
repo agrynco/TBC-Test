@@ -1,4 +1,6 @@
-﻿using TBC_Test.Business.Domain;
+﻿using System.Collections.Generic;
+using System.Linq;
+using TBC_Test.Business.Domain;
 using TBC_Test.DAL.Abstract;
 
 namespace TBC_Test.Business
@@ -25,6 +27,11 @@ namespace TBC_Test.Business
         public Person Get(int id)
         {
             return _personsRepository.GetById(id);
+        }
+
+        public List<Person> GetAll()
+        {
+            return _personsRepository.GetAll().ToList();
         }
 
         public void Update(Person person)

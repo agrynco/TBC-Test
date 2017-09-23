@@ -4,5 +4,6 @@ namespace TBC_Test.DAL.Abstract
 {
     public interface IPersonsRepository : ITbcCrudRepository<Person>
     {
+
     }
 }
