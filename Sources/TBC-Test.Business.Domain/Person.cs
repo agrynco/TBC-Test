@@ -2,7 +2,7 @@
 
 namespace TBC_Test.Business.Domain
 {
-    public class Person
+    public class Person : IdentityEntity
     {
         public DateTime Birthdate { get; set; }
         public string FirstName { get; set; }

@@ -40,7 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PersonsBl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TBC-Test.Business.Domain\TBC-Test.Business.Domain.csproj">
+      <Project>{3735C292-85DA-420F-A284-56D9CA5AA044}</Project>
+      <Name>TBC-Test.Business.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TBC-Test.DAL.Abstract\TBC-Test.DAL.Abstract.csproj">
+      <Project>{9349D20E-4BA2-4E01-81FF-3EBE794BA792}</Project>
+      <Name>TBC-Test.DAL.Abstract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

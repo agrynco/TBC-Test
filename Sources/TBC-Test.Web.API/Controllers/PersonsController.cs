@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using TBC_Test.Business;
 using TBC_Test.Business.Domain;
 using TBC_Test.Web.API.Models;
 
@@ -10,6 +11,13 @@ namespace TBC_Test.Web.API.Controllers
     [RoutePrefix("persons")]
     public class PersonsController : ApiController
     {
+        private readonly PersonsBl _personsBl;
+
+        public PersonsController(PersonsBl personsBl)
+        {
+            _personsBl = personsBl;
+        }
+
         [Route]
         public List<PersonModel> Get()
         {

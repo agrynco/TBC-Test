@@ -116,6 +116,10 @@
       <Project>{3735C292-85DA-420F-A284-56D9CA5AA044}</Project>
       <Name>TBC-Test.Business.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TBC-Test.Business\TBC-Test.Business.csproj">
+      <Project>{27CD35F2-C7FD-406E-86B6-423BE51FF7D4}</Project>
+      <Name>TBC-Test.Business</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
