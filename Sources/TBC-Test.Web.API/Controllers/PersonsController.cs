@@ -35,5 +35,29 @@ namespace TBC_Test.Web.API.Controllers
                 }
             }.ToList();
         }
+
+        [Route("{personalNumber}")]
+        public PersonModel Get(string personalNumber)
+        {
+            return new PersonModel
+            {
+                Gender = Gender.Male,
+                Birthdate = new DateTime(1977, 5, 15),
+                FirstName = "Adriano",
+                LastName = "Chelentano",
+                PersonalNumber = "01234567891",
+                Salary = 100000
+            };
+        }
+
+        [Route]
+        public void Post(PersonModel personModel)
+        {
+        }
+
+        [Route]
+        public void Put(PersonModel personModel)
+        {
+        }
     }
 }
