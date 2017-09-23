@@ -17,13 +17,14 @@ app.factory('personsService', ['$http', function ($http) {
         });
     };
 
-    var _saveUpdate = function(person) {
-        if (person.personalNumber == undefined) {
-            return $http.post(serviceBase + "person", person).then(function(results) {
+    var _saveUpdate = function (person) {
+
+        if (person.id == undefined || person.id == 0) {
+            return $http.post(serviceBase + "persons", person).then(function(results) {
                 return results;
             });
         } else {
-            return $http.put(serviceBase + "person", person).then(function(results) {
+            return $http.put(serviceBase + "persons", person).then(function(results) {
                 return results;
             });
         }

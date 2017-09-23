@@ -1,11 +1,19 @@
 ﻿<div class="row">
     <form novalidate name="frmStudent" id="frmStudent" class="form-horizontal row-border">
         <div class="col-md-12">
-
             <div class="col-md-12">
                 <div class="col-md-6">
+                    <div class="form-group" >
+                        <label class="col-md-4 control-label" for="namePersonalNumber">Id</label>
+                        <div class="col-md-7">
+                            <input type="text"
+                                   id="idId"
+                                   class="form-control"
+                                   name="nameId" ng-model="id" />
+                        </div>
+                    </div>
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="input17">Personal Number</label>
+                        <label class="col-md-4 control-label" for="namePersonalNumber">Personal Number</label>
                         <div class="col-md-7">
                             <input type="text"
                                    id="idPersonalNumber"
@@ -14,7 +22,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="input17">First Name</label>
+                        <label class="col-md-4 control-label" for="nameFirstName">First Name</label>
                         <div class="col-md-7">
                             <input type="text"
                                    id="idFirstName"
@@ -23,41 +31,41 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="input17">Last Name</label>
+                        <label class="col-md-4 control-label" for="nameLastName">Last Name</label>
                         <div class="col-md-7">
                             <input type="text"
                                    id="idLastName"
                                    class="form-control"
                                    name="nameLastName" ng-model="lastName" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="input17"> Birthdate</label>
-                        <div class="col-md-7">
-                            <input type="text"
-                                   id="idBirsthDate"
-                                   class="form-control"
-                                   name="nameBirstDate" ng-model="birthdate" />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="input17">Last Name</label>
-                        <div class="col-md-7">
-                            <input type="text"
-                                   id="idLastName"
-                                   class="form-control"
-                                   name="nameLastName" ng-model="lastName" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="input17"> Birthdate</label>
+                        <label class="col-md-4 control-label" for="nameBirstDate">Birthdate</label>
                         <div class="col-md-7">
                             <input type="text"
                                    id="idBirsthDate"
                                    class="form-control"
                                    name="nameBirstDate" ng-model="birthdate" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="nameGender">Gender</label>
+                        <div class="col-md-7">
+                            <input type="text"
+                                   id="idGender"
+                                   class="form-control"
+                                   name="nameGender" ng-model="gender"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="nameSalary">Salary</label>
+                        <div class="col-md-7">
+                            <input type="text"
+                                   id="idSalary"
+                                   class="form-control"
+                                   name="nameSalary" ng-model="salary"/>
                         </div>
                     </div>
                 </div>
