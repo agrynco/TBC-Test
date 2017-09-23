@@ -30,7 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AGrynCo.Lib, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AGrynco.Lib.dll.0.0.31\lib\net46\AGrynCo.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +50,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\BaseCRUDRepository.cs" />
+    <Compile Include="Core\BaseReadOnlyRepository.cs" />
+    <Compile Include="Core\BaseRepository.cs" />
+    <Compile Include="PersonsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TbcCrudRepository.cs" />
+    <Compile Include="TbcDbContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TBC-Test.Business.Domain\TBC-Test.Business.Domain.csproj">
+      <Project>{3735C292-85DA-420F-A284-56D9CA5AA044}</Project>
+      <Name>TBC-Test.Business.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TBC-Test.DAL.Abstract\TBC-Test.DAL.Abstract.csproj">
+      <Project>{9349D20E-4BA2-4E01-81FF-3EBE794BA792}</Project>
+      <Name>TBC-Test.DAL.Abstract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

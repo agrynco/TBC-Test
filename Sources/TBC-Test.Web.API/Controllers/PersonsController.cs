@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using TBC_Test.Business;
 using TBC_Test.Business.Domain;
 using TBC_Test.Web.API.Models;
 
@@ -10,47 +10,31 @@ namespace TBC_Test.Web.API.Controllers
     [RoutePrefix("persons")]
     public class PersonsController : ApiController
     {
+        private readonly PersonsBl _personsBl;
+
+        public PersonsController(PersonsBl personsBl)
+        {
+            _personsBl = personsBl;
+        }
+
         [Route]
         public List<PersonModel> Get()
         {
-            return new[]
-            {
-                new PersonModel
-                {
-                    Gender = Gender.Male,
-                    Birthdate = new DateTime(1977, 5, 15),
-                    FirstName = "Adriano",
-                    LastName = "Chelentano",
-                    PersonalNumber = "01234567891",
-                    Salary = 100000,
-                    Id = 1
-                },
-                new PersonModel
-                {
-                    Gender = Gender.Femail,
-                    Birthdate = new DateTime(1977, 5, 15),
-                    FirstName = "Rabinya",
-                    LastName = "Izaura",
-                    PersonalNumber = "01234567892",
-                    Salary = 25,
-                    Id = 2
-                }
-            }.ToList();
+            return _personsBl.GetAll().Select(person => new PersonModel(person)).ToList();
         }
 
-        [Route("{personalNumber}")]
-        public PersonModel Get(string personalNumber)
+        /// <summary>
+        /// Retrieves the <see cref="Person"/> by it's <see cref="id"/>
+        /// </summary>
+        /// <param name="id">The identifier of the <see cref="Person"/> to be loaded</param>
+        /// <returns><see cref="PersonModel"/></returns>
+        [Route("{id}")]
+        //[SwaggerResponse(HttpStatusCode.OK, Type = typeof(PersonModel))]
+        public IHttpActionResult Get(int id)
         {
-            return new PersonModel
-            {
-                Gender = Gender.Male,
-                Birthdate = new DateTime(1977, 5, 15),
-                FirstName = "Adriano",
-                LastName = "Chelentano",
-                PersonalNumber = "01234567891",
-                Salary = 100000,
-                Id = 1
-            };
+            Person person = _personsBl.Get(id);
+
+            return Ok(new PersonModel(person));
         }
 
         [Route]

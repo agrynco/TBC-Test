@@ -30,6 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AGrynCo.Lib, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AGrynco.Lib.dll.0.0.31\lib\net46\AGrynCo.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector, Version=4.0.11.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.0.11\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Extensions.LifetimeScoping, Version=4.0.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Extensions.LifetimeScoping.4.0.0\lib\net40\SimpleInjector.Extensions.LifetimeScoping.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +49,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyInjectionException.cs" />
+    <Compile Include="DependencyInjectionHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TBC-Test.Configuration\TBC-Test.Configuration.csproj">
+      <Project>{0CA9F5FA-15FE-498F-8BDD-A4DEB7D99F32}</Project>
+      <Name>TBC-Test.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TBC-Test.DAL.Abstract\TBC-Test.DAL.Abstract.csproj">
+      <Project>{9349D20E-4BA2-4E01-81FF-3EBE794BA792}</Project>
+      <Name>TBC-Test.DAL.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TBC-Test.DAL.EF\TBC-Test.DAL.EF.csproj">
+      <Project>{ECFBEDC3-281D-4C81-B58E-D850FB5486AA}</Project>
+      <Name>TBC-Test.DAL.EF</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
