@@ -10,6 +10,7 @@ namespace TBC_Test.Web.API.Models
         public Gender? Gender { get; set; }
         public string LastName { get; set; }
         public string PersonalNumber { get; set; }
+        public int Id { get; set; }
         public decimal Salary { get; set; }
     }
 }

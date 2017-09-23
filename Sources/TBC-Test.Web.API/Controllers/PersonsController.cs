@@ -22,7 +22,8 @@ namespace TBC_Test.Web.API.Controllers
                     FirstName = "Adriano",
                     LastName = "Chelentano",
                     PersonalNumber = "01234567891",
-                    Salary = 100000
+                    Salary = 100000,
+                    Id = 1
                 },
                 new PersonModel
                 {
@@ -31,7 +32,8 @@ namespace TBC_Test.Web.API.Controllers
                     FirstName = "Rabinya",
                     LastName = "Izaura",
                     PersonalNumber = "01234567892",
-                    Salary = 25
+                    Salary = 25,
+                    Id = 2
                 }
             }.ToList();
         }
@@ -46,7 +48,8 @@ namespace TBC_Test.Web.API.Controllers
                 FirstName = "Adriano",
                 LastName = "Chelentano",
                 PersonalNumber = "01234567891",
-                Salary = 100000
+                Salary = 100000,
+                Id = 1
             };
         }
 

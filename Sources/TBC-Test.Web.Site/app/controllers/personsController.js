@@ -24,6 +24,7 @@ app.controller("personsController",
                         $scope.birthdate = results.data.birthdate;
                         $scope.gender = results.data.gender;
                         $scope.salary = results.data.salary;
+                        $scope.id = results.data.id;
                     },
                     function(error) {
                         console.log(error);
@@ -38,7 +39,8 @@ app.controller("personsController",
                     lastName: $scope.lastName,
                     birthdate: $scope.birthdate,
                     gender: $scope.gender,
-                    salary: $scope.salary
+                    salary: $scope.salary,
+                    id: $scope.id
                 }
 
                 personsService.saveUpdate(person);
