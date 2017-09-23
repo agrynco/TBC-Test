@@ -93,7 +93,7 @@
     <Content Include="app\controllers\indexController.js" />
     <Content Include="app\controllers\personsController.js" />
     <Content Include="app\services\personsService.js" />
-    <Content Include="app\views\home.html" />
+    <Content Include="app\views\persons-edit.html" />
     <Content Include="app\views\persons.html" />
     <Content Include="content\bootstrap-theme.css" />
     <Content Include="content\bootstrap-theme.min.css" />
@@ -104,6 +104,7 @@
     <Content Include="content\loading-bar.css" />
     <Content Include="content\loading-bar.min.css" />
     <Content Include="content\site.css" />
+    <Content Include="content\ui-bootstrap-csp.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
@@ -124,6 +125,10 @@
     <Content Include="scripts\angular-mocks.js" />
     <Content Include="scripts\angular-route.js" />
     <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular-ui\ui-bootstrap-tpls.js" />
+    <Content Include="scripts\angular-ui\ui-bootstrap-tpls.min.js" />
+    <Content Include="scripts\angular-ui\ui-bootstrap.js" />
+    <Content Include="scripts\angular-ui\ui-bootstrap.min.js" />
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />

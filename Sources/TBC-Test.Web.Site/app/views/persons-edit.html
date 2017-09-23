@@ -1,0 +1,41 @@
+﻿<div>
+    <div class="modal-header">
+        <h3 class="modal-title">Edit Row</h3>
+    </div>
+    <div class="modal-body">
+    
+        <form name="spersonForm">
+
+            <div class="block">
+                <label>Personal number</label>
+                <input class="input" type="text" disabled value="{{vm.entity.id}}" />
+            </div>
+            <div class="block">
+                <label>First name</label>
+                <input class="input" type="text" ng-model="vm.entity.exposedws"/>
+            </div>
+            <div class="block">
+                <label>Last name</label>
+                <input class="input" type="text" ng-model="vm.entity.exposedoperation"/>
+            </div>
+            <div class="block">
+                <label>Birthdate</label>
+                <input class="input" type="text" ng-model="vm.entity.version"/>
+            </div>
+            <div class="block">
+                <label>Gender</label>
+                <input class="input" type="text" ng-model="vm.entity.category"/>
+            </div>
+            <div class="block">
+                <label>Salary</label>
+                <input class="input" type="text" ng-model="vm.entity.exposednamespace"/>
+            </div>
+        </form>
+	
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="vm.save()">Save</button>
+        <button class="btn btn-primary" ng-click="vm.remove()">Delete</button>
+        <button class="btn btn-primary" ng-click="$close()">Cancel</button>
+    </div>
+</div>
