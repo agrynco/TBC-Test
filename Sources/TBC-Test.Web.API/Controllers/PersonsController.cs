@@ -20,6 +20,15 @@ namespace TBC_Test.Web.API.Controllers
             _personsBl = personsBl;
         }
 
+        [Route("{id}")]
+        [HttpDelete]
+        public IHttpActionResult Delete(int id)
+        {
+            _personsBl.Delete(id);
+
+            return Ok();
+        }
+
         [Route]
         public List<PersonModel> Get()
         {

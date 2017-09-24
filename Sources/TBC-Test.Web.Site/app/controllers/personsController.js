@@ -5,16 +5,20 @@ app.controller("personsController",
 
             $scope.persons = [];
 
-            personsService.getPersons().then(function (results) {
+            var getPersons = function() {
 
-                $scope.persons = results.data;
+                personsService.getPersons().then(function(results) {
 
-            },
-                function (error) {
-                    console.log(error);
-                    //alert(error.data.message);
-                });
+                        $scope.persons = results.data;
 
+                    },
+                    function(error) {
+                        console.log(error);
+                        //alert(error.data.message);
+                    });
+            };
+
+            getPersons();
 
             $scope.getPerson = function(personalNumber) {
                 personsService.getPerson(personalNumber).then(function(results) {
@@ -40,10 +44,20 @@ app.controller("personsController",
                     birthdate: $scope.birthdate,
                     gender: $scope.gender,
                     salary: $scope.salary,
-                    id: $scope.id
+                    id: ($scope.id == undefined || $scope.id === "") ? 0 : $scope.id
                 }
 
-                personsService.saveUpdate(person);
+                personsService.saveUpdate(person).then(function() {
+                    getPersons();
+                });
             };
+
+            $scope.deletePerson = function (id) {
+                if (confirm("Are you sure want to delete person?")) {
+                    personsService.delete(id).then(function() {
+                        getPersons();
+                    });
+                }
+            }
         }
     ]);
